@@ -1,0 +1,227 @@
+/* Appliquer une police élégante pour l'ensemble de la page */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+}
+
+/* Centrer le contenu avec Flexbox */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Rendre l'image responsive */
+.game-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Ombre portée pour l'en-tête */
+header {
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Ombre portée sur l’image */
+.game-image {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Effet zoom sur l’image au survol */
+.game-image:hover {
+    transform: scale(1.1);
+}
+
+/* Animation d’apparition du titre */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Appliquer l'animation au titre */
+h1 {
+    font-size: 2.5em;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Effet de zoom au survol */
+.game-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Agrandir l’image lorsqu'on passe la souris dessus */
+.game-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 16px 32px rgba(255, 255, 255, 0.2);
+}
+
+
+/* .play-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background: #ff4500;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+
+.play-button:hover {
+    background: #ff5722;
+    transform: scale(1.05);
+} */
+
+/* 🎨 Bouton stylisé avec un contraste optimal */
+.play-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 18px 35px; /* Augmentation de la zone tactile */
+    font-size: 20px; /* Taille du texte plus grande pour une meilleure lisibilité */
+    font-weight: bold;
+    color: #ffffff; /* Blanc pur pour le contraste */
+    background: #d90000; /* Rouge foncé pour un contraste élevé */
+    border-radius: 8px; /* Coins légèrement arrondis */
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid #ffffff; /* Bordure blanche pour améliorer la visibilité */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(217, 0, 0, 0.5); /* Ombre subtile */
+}
+
+/* 🚀 Effet au survol */
+.play-button:hover {
+    background: #b00000; /* Rouge encore plus foncé pour le survol */
+    transform: scale(1.08); /* Zoom léger */
+    box-shadow: 0 6px 15px rgba(176, 0, 0, 0.7); /* Effet lumineux */
+}
+
+/* 📱 Amélioration de l’accessibilité mobile */
+@media screen and (max-width: 768px) {
+    .play-button {
+        padding: 20px 40px; /* Zone de clic encore plus grande */
+        font-size: 22px;
+        border-radius: 10px;
+    }
+}
+
+/* Rendre la mise en page plus flexible */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .game-image {
+        max-width: 90%;
+    }
+}
+
+/* 🌟 Pied de page stylisé avec bon contraste */
+footer {
+    background: linear-gradient(to right, #0d1b2a, #1b263b);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 18px;
+    position: relative;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 🌟 Centrer le contenu du pied de page */
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* 🎮 Bouton avec accessibilité et effet dynamique */
+.play-buttonf {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 18px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff; /* Contraste fort */
+    background: #d90000; /* Rouge foncé pour un contraste élevé */
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(217, 0, 0, 0.5);
+}
+
+/* 🚀 Effet au survol */
+.play-buttonf:hover    {
+    background: #b00000;
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(176, 0, 0, 0.7);
+}
+
+/* 🎨 Effet d’appui */
+.play-buttonf:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(176, 0, 0, 0.7);
+}
+
+/* 📱 Responsive Design pour le footer */
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 16px;
+        padding: 20px;
+    }
+    .play-buttonf {
+        padding: 20px 40px;
+        font-size: 22px;
+        border-radius: 10px;
+    }
+}
+
+
+/* 🌈✨ Personnalisation simple de la barre de défilement 🌈✨ */
+/*************** 🎨🎨 CSS pour styliser la barre de défilement dans la page 🎨🎨 *******************/
+
+/* 🎯🛠️ Personnalisation de la largeur de la barre de défilement 📏📐 */
+::-webkit-scrollbar {
+    width: 11px; /* 🔍 Largeur de la barre verticale 🔍 */
+    height: 11px; /* 📏 Hauteur de la barre horizontale 📏 */
+}
+
+/* 🎨🖌️ Couleur de l'arrière-plan de la barre de défilement 🖌️🎨 */
+::-webkit-scrollbar-track {
+    background-color: #1b263b; /* 🎭 Couleur de la piste 🎭 */
+}
+
+/* 🎯🎨 Couleur et style de la partie glissante de la barre de défilement 🎨🎯 */
+::-webkit-scrollbar-thumb {
+    background-color: #344995; /* 🔵 Couleur du curseur 🔵 */
+    border-radius: 10px; /* ⚪ Arrondir le curseur ⚪ */
+    border: 3px solid #f1f1f1; /* 📏 Espacement autour du curseur 📏 */
+}
+
+/* ⚡🔥 Couleur de la partie glissante au survol 🔥⚡ */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #d90000; /* 🔥💥 Couleur du curseur au survol 💥🔥 */
+}
+
+/*************** 🎨🎨 CSS pour styliser la barre de défilement dans la page 🎨🎨 *******************/
